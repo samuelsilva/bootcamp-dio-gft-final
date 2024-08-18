@@ -2,7 +2,7 @@
 
 Esta API foi feita utilizando Java 17 + Springboot 3 com publicação CI/CD utilizando Railway.
 
-Diagrama de classes do projeto:
+### Diagrama de classes do projeto:
 
 ```mermaid
 classDiagram
@@ -36,7 +36,7 @@ classDiagram
 
 
 
-Diagrama entidade-relacionamento do projeto:
+### Diagrama entidade-relacionamento do projeto:
 
 ```mermaid
 erDiagram
