@@ -2,8 +2,41 @@
 
 Esta API foi feita utilizando Java 17 + Springboot 3 com publicação CI/CD utilizando Railway.
 
+Diagrama de classes do projeto:
 
-Abaixo o diagrama do projeto:
+```mermaid
+classDiagram
+    class User {
+        +Long id
+        +String name
+        +String email
+        +String phoneNumber
+    }
+
+    class Restaurant {
+        +Long id
+        +String name
+        +String address
+        +String cuisineType
+        +String phoneNumber
+    }
+
+    class Reservation {
+        +Long id
+        +LocalDateTime reservationDate
+        +int numberOfGuests
+        +Restaurant restaurant
+        +User user
+    }
+
+    User "1" -- "0..*" Reservation : makes
+    Restaurant "1" -- "0..*" Reservation : has
+
+```
+
+
+
+Diagrama entidade-relacionamento do projeto:
 
 ```mermaid
 erDiagram
